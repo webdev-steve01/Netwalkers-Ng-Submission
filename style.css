@@ -1,0 +1,208 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* * styling the nav bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+  font-size: 1.2em;
+  -webkit-box-shadow: 0.5px 0 3px 3.5px #dddddd;
+  -moz-box-shadow: 0.5px 0 3px 3.5px #dddddd;
+  box-shadow: 0.5px 0 3px 3.5px #dddddd;
+  margin-bottom: 10px;
+}
+.nav-bar-left,
+.nav-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.nav-bar-left {
+  gap: 2em;
+}
+
+/* * styling the logo icon */
+.logo-holder {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.icon {
+  width: 60px;
+  background-color: #9c3030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.image {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  height: 44.12px;
+}
+.logo-text {
+  font-size: 40px;
+  font-style: "Sofadi One";
+  border: #9c3030 5px solid;
+  padding: 0 0.1em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* *styling other items in the nav bar */
+.hamburger {
+  width: 40px;
+  height: 41px;
+}
+.lab-name {
+  font-size: 36px;
+  font-style: Roboto;
+  color: #5b5b5b;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.name {
+  font-size: 24px;
+  color: #5b5b5b;
+  font-weight: 600;
+}
+.arrow-down {
+  display: flex;
+  align-items: center;
+}
+
+/* * side bar styles */
+.side-bar-elements {
+  display: flex;
+  align-items: center;
+  padding: 1em 1em;
+  justify-content: space-between;
+  color: #5b5b5b;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.side-bar-image {
+  width: 25px;
+}
+.arrow-down {
+  width: 15px;
+}
+.side-bar {
+  height: 75vh;
+  position: fixed;
+  width: 347px;
+  left: 0;
+  padding: 2em 1em;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  -webkit-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  -moz-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  box-shadow: 2px 3px 3px 1.5px #dddddd;
+}
+.side-bar::-webkit-scrollbar {
+  width: 10px;
+  /* background-color: #5b5b5b; */
+  /* height: 20px; */
+}
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+}
+.icon-and-text {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  max-width: 200px;
+}
+
+/* * Body styles */
+.body {
+  right: 0;
+  z-index: 100;
+  width: 72%;
+  right: 0;
+  margin-left: auto;
+  position: relative;
+}
+.page {
+  height: 72vh;
+  position: relative;
+  -webkit-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  -moz-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  box-shadow: 2px 3px 3px 1.5px #dddddd;
+}
+.page-placeholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5b5b5b;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  align-items: center;
+}
+.page-header-right {
+  display: flex;
+  gap: 1em;
+}
+.header-element {
+  display: flex;
+  gap: 0.5em;
+  min-width: 50px;
+  color: #c4c4c4;
+  font-size: 18px;
+  font-weight: 500;
+}
+.active {
+  color: #5b5b5b;
+}
+
+.footer {
+  padding: 1em;
+  -webkit-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  -moz-box-shadow: 2px 3px 3px 1.5px #dddddd;
+  box-shadow: 2px 3px 3px 1.5px #dddddd;
+  color: #5b5b5b;
+  font-size: 17px;
+}
+.footer-text {
+  font-weight: 900;
+}
+
+/* * styling the state for the active link */
+.body .side-bar .Inventory {
+  position: relative;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+.Inventory::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #9c3030;
+  bottom: 0;
+  left: 5px;
+}
