@@ -152,6 +152,9 @@ img {
 .side-bar::-webkit-scrollbar-thumb {
   background-color: #c4c4c4;
 }
+.sidebar-footer{
+  margin-bottom: auto;
+}
 .icon-and-text {
   display: flex;
   align-items: center;
@@ -178,6 +181,9 @@ img {
   height: 85vh;
   position: relative;
   box-shadow: -1px 0px 6px 5px #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 83%;
   /* background-color: red; */
 }
 .page-placeholder {
@@ -263,8 +269,8 @@ img {
 @media screen and (max-width: 800px) {
   .sidebar-opener {
     position: sticky;
-    z-index: 100;
-    bottom: 10px;
+    /* z-index: 100; */
+    top: 700px;
     /* border: 1px solid black; */
     /* width: 50px; */
     width: 35px;
@@ -278,12 +284,21 @@ img {
     border-radius: 50%;
     background-color: #9c3030;
   }
+  .test{
+    background-color: #9c3030;
+  }
   .opener {
     width: 30px;
     height: 30px;
+    /* background-color: #9c3030; */
+    padding: .5em;
+    border-radius: 50%;
   }
 }
 @media screen and (max-width: 750px) {
+  .footer{
+    font-size: .6em;
+  }
   .body {
     /* padding-top: 90px; */
     display: block;
@@ -316,9 +331,6 @@ img {
     gap: 0.5em;
     animation: slide-in 100ms ease-in-out;
     display: none;
-  }
-  .footer{
-    font-size: .6em;
   }
 }
 @media screen and (max-width: 510px) {
