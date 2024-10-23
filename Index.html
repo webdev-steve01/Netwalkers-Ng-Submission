@@ -40,7 +40,7 @@
           <section class="hamburger">
             <img src="./public/Group-1.svg" alt="" />
           </section>
-          <p class="lab-name">Your Laboratory Name</p>
+          <p class="lab-name">Kingsway Hospital</p>
         </section>
         <section class="nav-bar-right">
           <section class="bell">
@@ -188,7 +188,7 @@
         <section class="page-body">
           <section class="page">
             <section class="page-header">
-              <p class="page-placeholder">Blank Page</p>
+              <p class="page-placeholder">Drug Prescription Page</p>
               <section class="page-header-right">
                 <section class="header-element">
                   <p class="page-number">Home</p>
@@ -207,11 +207,235 @@
                 </section>
               </section>
             </section>
-            <section class="sidebar-footer">
-              <section class="sidebar-opener" id="side-bar">
-                <img src="./public/right.svg" class="opener" alt="">
+            <section class="page-content">
+              <section class="page-content-nav">
+                <section class="content-nav--child current">
+                  Vital signs
+                </section>
+                <section class="content-nav--child">
+                  Presenting Complain
+                </section>
+                <section class="content-nav--child">Diagnosis</section>
+                <section class="content-nav--child">Plan</section>
+                <section class="content-nav--child">Charges</section>
+                <section class="content-nav--child">Payments</section>
+                <section class="content-nav--child">Prescriptions</section>
+                <section class="content-nav--child">Medications</section>
+              </section>
+
+              <section class="holder">
+                <p class="table-title">Prescribed Drugs</p>
+                <section class="table-and-form">
+                  <div>
+                    <table class="table" id="table">
+                      <thead>
+                        <tr class="table-row">
+                          <th class="table-head">S/N</th>
+                          <th class="table-head medicine">Medicine name</th>
+                          <th class="table-head strength">medicine class</th>
+                          <th class="table-head">dose/frq</th>
+                          <th class="table-head instruction">Duration</th>
+                          <th class="table-head">instruction</th>
+                          <th class="table-head action">actions</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                      <!-- <tr>
+                        <td class="empty-table">nothing</td>
+                      </tr> -->
+                      <!-- <tr class="table-row">
+                        <td>1</td>
+                        <td>
+                          <p>Tab Emzor Paracetamol 250mg</p>
+                          <p class="arthemeter">Arthemeter</p>
+                        </td>
+                        <td>250mg</td>
+                        <td>QDS/7 days</td>
+                        <td>1 Morning, one night for 7 days</td>
+                        <td>
+                          <div class="remove">Remove</div>
+                        </td>
+                      </tr>
+                      <tr class="table-row">
+                        <td>2</td>
+                        <td>
+                          <p>Tab Emzor Paracetamol 250mg</p>
+                          <p class="arthemeter">Arthemeter</p>
+                        </td>
+                        <td>250mg</td>
+                        <td>QDS/7 days</td>
+                        <td>1 Morning, one night for 7 days</td>
+                        <td>
+                          <div class="remove">Remove</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>
+                          <p>Tab Emzor Paracetamol 250mg</p>
+                          <p class="arthemeter">Arthemeter</p>
+                        </td>
+                        <td>250mg</td>
+                        <td>QDS/7 days</td>
+                        <td>1 Morning, one night for 7 days</td>
+                        <td>
+                          <div class="remove">Remove</div>
+                        </td>
+                      </tr> -->
+                    </table>
+                    <div class="empty-table" id="empty">
+                      <p>no prescribed drugs yet</p>
+                    </div>
+
+                    <section class="done-prescribing" id="prescribe">
+                      <p>
+                        <span class="arrow-down"
+                          ><svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.9953 6.54339L14.7578 7.30593C15.0807 7.62881 15.0807 8.1509 14.7578 8.47034L8.08393 15.1477C7.76105 15.4706 7.23895 15.4706 6.91951 15.1477L0.242157 8.47034C-0.080719 8.14747 -0.080719 7.62537 0.242157 7.30593L1.00469 6.54339C1.33101 6.21708 1.86341 6.22395 2.18285 6.55713L6.12606 10.6961V0.824364C6.12606 0.367529 6.49359 0 6.95042 0H8.04958C8.50641 0 8.87394 0.367529 8.87394 0.824364V10.6961L12.8172 6.55713C13.1366 6.22052 13.669 6.21365 13.9953 6.54339V6.54339Z"
+                              fill="#ffffff"
+                            />
+                          </svg>
+                        </span>
+                        Done Prescribing
+                      </p>
+                    </section>
+                    <section class="remark" id="remark">
+                      <section class="remark-child">
+                        <section class="remark-top">
+                          <label for="remark-input">Remark</label>
+                          <input type="text" name="" id="remark-input" />
+                        </section>
+
+                        <section class="save-remark">
+                          <p>Save Prescription</p>
+                        </section>
+                      </section>
+                    </section>
+                  </div>
+                  <form action="" class="form" id="form">
+                    <div class="flex">
+                      <section class="medicine-brand">
+                        <label for="brand">Search Medicine class</label>
+                        <input
+                          type="text"
+                          name=""
+                          id="brand"
+                          class="brand"
+                          placeholder="Search Medicine class"
+                        />
+                        <section class="filter" id="filter">
+                          <section
+                            class="filter-children"
+                            id="class-container"
+                          ></section>
+                        </section>
+                      </section>
+                      <section class="medicine-brand">
+                        <label for="medicine-name">Medicine Name</label>
+                        <input
+                          type="text"
+                          name=""
+                          id="medicine-name"
+                          class="medicine-name"
+                          placeholder="Medicine name"
+                        />
+                        <section class="filter-children" id="mName"></section>
+                      </section>
+                      <section class="medicine-brand">
+                        <label for="dose">Dose</label>
+                        <input
+                          type="text"
+                          name=""
+                          class="dose"
+                          id="dose"
+                          placeholder="Enter strength"
+                        />
+                        <section class="dose-filter" id="dose-filter"></section>
+                      </section>
+                      <section class="medicine-brand">
+                        <label for="duration">Interval</label>
+                        <input
+                          type="text"
+                          name=""
+                          id="interval"
+                          placeholder="Enter interval"
+                        />
+                        <section
+                          class="interval-filter"
+                          id="interval-filter"
+                        ></section>
+                      </section>
+                      <section class="duration">
+                        <label for="number">Duration</label>
+                        <section class="duration-input">
+                          <input
+                            id="number"
+                            type="number"
+                            min="0"
+                            max="100"
+                            step="1"
+                            class="none"
+                          />
+                          <p class="slash">/</p>
+                          <select title="values" class="none" id="dropdown">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                            <option value="80">80</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
+                            <option value="120">120</option>
+                          </select>
+                        </section>
+                      </section>
+
+                      <section class="notes">
+                        <label for="notes">extra notes</label>
+                        <input
+                          type="text"
+                          name=""
+                          id="notes"
+                          placeholder="nil"
+                        />
+                      </section>
+
+                      <!-- <section class="add">
+                        <p class="add-buttons">Add</p>
+                      </section> -->
+                    </div>
+                    <section class="add">
+                      <button type="submit" class="add-buttons">Add</button>
+                    </section>
+                  </form>
+                </section>
               </section>
             </section>
+          </section>
+          <section class="next">
+            <p>NEXT</p>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 12.5C25 5.5957 19.4043 0 12.5 0C5.5957 0 0 5.5957 0 12.5C0 19.4043 5.5957 25 12.5 25C19.4043 25 25 19.4043 25 12.5ZM12.9834 18.6914C12.6904 18.5693 12.5 18.2861 12.5 17.9688V14.8438H7.8125C6.94971 14.8438 6.25 14.144 6.25 13.2812V11.7188C6.25 10.856 6.94971 10.1562 7.8125 10.1562H12.5V7.03125C12.5 6.71538 12.69 6.43018 12.9822 6.30957C13.2744 6.18828 13.6101 6.25542 13.8337 6.47895L19.3025 11.9477C19.6076 12.2528 19.6076 12.7475 19.3025 13.0522L13.8337 18.5209C13.6084 18.7451 13.2764 18.8135 12.9834 18.6914Z"
+                fill="white"
+              />
+            </svg>
           </section>
           <section class="footer">
             <p class="footer-text">
